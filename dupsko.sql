@@ -33,7 +33,7 @@ CREATE TABLE `articles` (
   `creatorid` int NOT NULL,
   `content` varchar(255) NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Zrzut danych tabeli `articles`
@@ -53,7 +53,7 @@ INSERT INTO `articles` (`articleid`, `creatorid`, `content`, `timestamp`) VALUES
 CREATE TABLE `counter` (
   `userid` int NOT NULL,
   `counter` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Zrzut danych tabeli `counter`
@@ -81,7 +81,7 @@ CREATE TABLE `users` (
   `charuid` int NOT NULL,
   `maxposts` tinyint NOT NULL DEFAULT '2',
   `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Zrzut danych tabeli `users`
